@@ -1,0 +1,19 @@
+{
+  "name": "@backhealth/react-presentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w api\" \"npm run dev -w app\"",
+    "start": "concurrently \"npm run start -w api\" \"npm run build -w app && npm run preview -w app\""
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "api",
+    "app"
+  ],
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

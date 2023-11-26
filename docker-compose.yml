@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+    container_name: react-presentation_api
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+
+  app:
+    build:
+      context: .
+      dockerfile: ./app/Dockerfile
+    container_name: react-presentation_app
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    ports:
+      - "8080:4173"
