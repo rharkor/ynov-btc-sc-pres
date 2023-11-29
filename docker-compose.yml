@@ -12,8 +12,8 @@ services:
       options:
         max-size: "50m"
     ports:
-      - "3000:3000"
-      - "3001:3001"
+      - "10070:3000"
+      - "10071:3001"
 
   app:
     build:
@@ -26,4 +26,4 @@ services:
       options:
         max-size: "50m"
     ports:
-      - "8080:4173"
+      - "10069:4173"
