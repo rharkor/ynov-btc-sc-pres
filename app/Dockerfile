@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 ENV NODE_ENV production
 
 COPY . .
-RUN npm ci
+RUN npm i
 
 
 RUN npm run build -w app
