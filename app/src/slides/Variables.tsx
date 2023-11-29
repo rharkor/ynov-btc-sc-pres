@@ -225,7 +225,7 @@ ${constructorDef}
 
 ${functionDef}
 }`}
-          className="text-lg [&>span]:!p-4 w-[1000px] max-w-[90vw]"
+          className="text-lg [&>span]:!p-4 !w-[1000px] max-w-[90vw]"
         />
       </div>
     </MultiSlideElement>

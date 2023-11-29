@@ -59,7 +59,7 @@ export default function Home() {
             level="L"
             includeMargin={true}
           />
-          <p className="text-center text-lg">
+          <p className="text-lg">
             Join this presentation at
             <br />
             <Link
