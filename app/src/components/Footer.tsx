@@ -23,7 +23,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className="absolute right-3 bottom-3 flex flex-col gap-4 items-end">
+      <div className="absolute right-3 bottom-3 flex flex-col gap-4 items-end z-10">
         {!isFullScreen && (
           <div className="flex flex-row gap-4">
             {(!controlledByRoot || admin) && !isRemote && (
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
       </div>
       {!isFullScreen && (
-        <div className="fixed left-3 top-3 text-foreground-400 text-sm font-extrabold hover:text-primary-400">
+        <div className="fixed left-3 top-3 text-foreground-400 text-sm font-extrabold hover:text-primary-400 z-10">
           <a
             href="https://github.com/rharkor/react-presentation"
             target="_blank"

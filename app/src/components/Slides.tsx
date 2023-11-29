@@ -51,7 +51,7 @@ export default function Slides() {
           )}
           key={i}
         >
-          {slideComponent()}
+          {slideComponent}
         </section>
       ))}
     </section>

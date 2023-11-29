@@ -5,6 +5,7 @@ export type SlideContextType = {
   maxSlide: number;
   setSlide: (slide: number) => void;
   setMaxSlide: React.Dispatch<React.SetStateAction<number>>;
+  mainRef: React.RefObject<HTMLDivElement>;
 };
 
 export const SlideContext = createContext<SlideContextType>({
@@ -12,4 +13,5 @@ export const SlideContext = createContext<SlideContextType>({
   maxSlide: 0,
   setSlide: () => {},
   setMaxSlide: () => {},
+  mainRef: { current: null },
 });
