@@ -33,7 +33,7 @@ const questions: {
     ],
   },
   {
-    title: "Pour quelle blockchain Solidity est-elle principalement utilisée ?",
+    title: "Pour quelle blockchain Solidity est-il principalement utilisée ?",
     answers: [
       {
         title: "Bitcoin",
@@ -54,8 +54,7 @@ const questions: {
     ],
   },
   {
-    title:
-      "Quel est le but d'une fonction de constructeur dans un contrat intelligent Solidity ?",
+    title: "Quel est le but du constructeur dans un smart contract ?",
     answers: [
       {
         title: "Détruire le contrat",
@@ -77,7 +76,7 @@ const questions: {
   },
   {
     title:
-      "En quoi les variables d'état diffèrent-elles des variables locales en Solidity ?",
+      "En quoi les variables d'état diffèrent-elles des variables mémoire en Solidity ?",
     answers: [
       {
         title:
